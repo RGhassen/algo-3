@@ -1,0 +1,12 @@
+ALGORITHM Dot product
+VAR
+   PS:INTEGER 
+    PROCEDURE dot_product()
+    VAR
+        v1,v2:INTEGER
+    BEGIN
+        PS=v1*v2*cos()
+    END
+BEGIN
+    set_instructions
+END
