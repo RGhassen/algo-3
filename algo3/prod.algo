@@ -12,3 +12,17 @@ BEGIN
         RETURN = FALSE
     END_IF
 END
+PROCEDURE ProduitScalaire(a,b : ARRAY_OF INTEGER, VAR c : BOOLEAN)
+VAR
+    sum,i : INTEGER := 0
+BEGIN
+    FOR i FROM 1 TO a.length STEP 1  DO
+        sum := sum + a[i]*b[i]
+    END_FOR
+
+    IF (sum = 0) THEN
+        c = TRUE
+    ELSE
+        c = FALSE
+    END_IF
+END
